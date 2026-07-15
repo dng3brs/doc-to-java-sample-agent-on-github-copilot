@@ -1,0 +1,17 @@
+{
+  "name": "debian12_nodejs_postgresql",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "xxxxx_app",
+  "workspaceFolder": "/workspaces",
+  "forwardPorts": [3000], // CHANGE_IT
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+      },
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  },
+  "remoteUser": "vscode"
+}
